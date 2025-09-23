@@ -24,6 +24,7 @@ app.get("/:id", async (c) => {
     headers: {
       "Content-Type": "image/svg+xml",
       "Cache-Control": "public, max-age=31536000, immutable",
+      "CDN-Cache-Control": "max-age=31536000",
     },
   });
 
